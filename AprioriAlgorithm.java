@@ -1,5 +1,3 @@
-package assignment;
-
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -12,19 +10,11 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class AprioriAlgorithm2 {
+public class AprioriAlgorithm {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-
 		try {
-			List<String> lines = Files
-					.readAllLines(
-							new File(
-									"C:\\Users\\Mohit\\Desktop\\workspace\\Data Mining\\dataminingdatasets\\retail.dat")
-									.toPath(), StandardCharsets.UTF_8);
+			List<String> lines = Files.readAllLines(new File("chess.dat").toPath(), StandardCharsets.UTF_8);
 			Map<Integer, Integer> map1item = new ConcurrentHashMap<Integer, Integer>();
 			Map<Integer, List<Integer>> mapItemTran = new HashMap<Integer, List<Integer>>();
 			List<List<List<Integer>>> C = new ArrayList<>();
@@ -97,7 +87,6 @@ public class AprioriAlgorithm2 {
 			}
 
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
