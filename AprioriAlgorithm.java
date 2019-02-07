@@ -18,7 +18,7 @@ public class AprioriAlgorithm {
 			Map<Integer, Integer> map1item = new ConcurrentHashMap<Integer, Integer>();
 			Map<Integer, List<Integer>> mapItemTran = new HashMap<Integer, List<Integer>>();
 			List<List<List<Integer>>> C = new ArrayList<>();
-			float minSupportPercent = 90 / 100; // change as per need
+			float minSupportPercent = (float) 90 / 100; // change as per need
 			int lineNo = 1;
 			for (String str : lines) {
 				if (!str.isEmpty()) {
