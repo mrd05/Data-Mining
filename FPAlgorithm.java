@@ -18,7 +18,7 @@ public class FPAlgorithm {
 			List<String> lines = Files
 					.readAllLines(
 							new File(
-									"C:\\Users\\Mohit\\Desktop\\workspace\\Data Mining\\dataminingdatasets\\test.txt")
+									"test.txt")
 									.toPath(), StandardCharsets.UTF_8);
 
 			Map<Integer, Integer> map1item = new ConcurrentHashMap<Integer, Integer>();
